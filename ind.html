@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Registration Form</title>
+    <link rel="stylesheet" herf="styleee.css">
+</head>
+<body>
+    <hr>
+    <h2><marquee scrollamount="15"><font size="6">Item Registration Form</font></marquee>
+    </h2>
+</hr>
+    <form id="itemForm" action="#" method="post">
+        <label for="itemName">Item Name (up to 20 char):</label>
+        <input type="text" id="itemName" name="itemName" pattern="[A-Za-z]{3}" maxlength="20" required><br>
+
+        <label for="itemOwner">Item Owner (20 char):</label>
+        <input type="text" id="itemOwner" name="itemOwner" maxlength="20" required><br>
+
+        <label for="itemDescription">Item Description (20 to 600 char):</label>
+        <textarea id="itemDescription" name="itemDescription" minlength="20" maxlength="600" required></textarea><br>
+
+        <label>Item Rating:</label><br>
+        <div class="item-rating">
+            <input type="radio" name="item-rating" value="1" required>1
+            <span class="radio-gap"></span>
+            <input type="radio" name="item-rating" value="2">2
+            <span class="radio-gap"></span>
+            <input type="radio" name="item-rating" value="3">3
+            <span class="radio-gap"></span>
+            <input type="radio" name="item-rating" value="4">4
+            <span class="radio-gap"></span>
+            <input type="radio" name="item-rating" value="5">5
+        </div><br>
+
+        <label for="itemImage">Item Image:</label>
+        <input type="file" id="itemImage" name="itemImage" accept="image/*" required><br>
+
+        <label for="itemPhoneNumber">Item Seller's Mobile Number:</label>
+        <input type="tel" id="itemPhoneNumber" name="itemPhoneNumber"  pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9" required><br>
+
+
+        <label for="sellerEmail">Seller's Email:</label>
+        <input type="email" id="sellerEmail" name="sellerEmail" required><br>
+
+        <label for="itemCategory">Item Category:</label>
+        <select id="itemCategory" name="itemCategory" required>
+            <option value="">Select Category</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Toys">Furniture</option>
+            <!-- Add more options as needed -->
+        </select><br>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

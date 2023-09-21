@@ -1,0 +1,80 @@
+/* Add this CSS to your styles.css */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+    padding: 40px;
+    background-color:#eca1a6;
+    background-image: url('ima.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color:  #dac292;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #d6cbd3;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="file"],
+input[type="radio"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+.item-rating{
+    display: flex;
+    gap: 20px;
+}
+.item-rating input[type="radio"]:first-child {
+    margin-left: 5px;
+}
+
+.radio-gap::before {
+    content: "\00a0";
+}
